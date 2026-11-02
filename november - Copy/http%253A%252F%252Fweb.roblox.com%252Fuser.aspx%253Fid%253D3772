@@ -1,0 +1,22 @@
+function AdClicked(url)
+{ 
+    var clickLineDisabled = "$dcli";
+    if(clickLineDisabled=="1")
+    {
+        return;
+    }
+    
+    var winOpen = "1";
+    if(winOpen == "1")
+    {
+        window.open(url,"");
+    }else
+    {
+        parent.location.href=url; 
+    }
+}
+var clickLineVarName5380228454 = 'http://r1.ace.advertising.com/click/site=850873/mnum=1887702/bnum=92033071/cstr=92033071=_5473d4d2_5380228454_850873*1887702*1183*0_1_/xsxdata=$xsxdata/xsinvid=0/imptid=AS393577bd5c9b42b38e0a545a7f023cc9?';
+
+document.write('<a href="javascript:AdClicked(clickLineVarName5380228454);" target="_self">');
+document.write('<img src="http://bannerfarm.ace.advertising.com/CDN/302252/SMITE_728x90_AriesMenFight_backup.jpg" border="0" width="728" height="90" alt="Click to learn more...">');
+document.write('</a>');
